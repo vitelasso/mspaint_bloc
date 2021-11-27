@@ -21,15 +21,16 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## Libraries
-     - flutter_colorpicker      //choose a color in a variety of styles
-     - flutter_bloc             //state management solution of the app
-     - bloc                     //state management pattern of the app
-     - auto_route               //routing tool 
-     - equatable                //implement based equality without boilerplate code and override == 
-     - auto_route_generator     //code generator library for the routes of the app
-     - mockito                  //mocking dependencies in testing
-     - bloc_test                //helper for bloc testing
-     - flutter_lints            //helper to linting problems
+
+- flutter_colorpicker      //choose a color in a variety of styles
+- flutter_bloc             //state management solution of the app
+- bloc                     //state management pattern of the app
+- auto_route               //routing tool 
+- equatable                //implement based equality without boilerplate code and override == 
+- auto_route_generator     //code generator library for the routes of the app
+- mockito                  //mocking dependencies in testing
+- bloc_test                //helper for bloc testing
+- flutter_lints            //helper to linting problems
 
 ## Architecture
 
