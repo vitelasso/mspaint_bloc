@@ -54,3 +54,5 @@ For the current developer environment running the analyze command (flutter analy
 
 In order to show the BLoC capabilities the "bloc_test" plugin was used and a couple of tests were created to check the PainterBloc. 
 Just a Proof of Concept to show the testing skills in Flutter.
+
+Regarding Manual Testings, the app was tested in an Android Virtual Emulator (Pixel 2), using Genymotion.
