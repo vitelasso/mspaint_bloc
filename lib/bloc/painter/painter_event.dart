@@ -1,27 +1,39 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:mspaint_bloc/utils/path_history.dart';
 
-abstract class PainterEvent {}
+abstract class PainterEvent extends Equatable {
+  const PainterEvent();
+}
 
 class UndoEvent extends PainterEvent {
   final Paint painter;
   final PathHistory pathHistory;
 
-  UndoEvent(this.painter, this.pathHistory);
+  const UndoEvent(this.painter, this.pathHistory);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class RedoEvent extends PainterEvent {
   final Paint painter;
   final PathHistory pathHistory;
 
-  RedoEvent(this.painter, this.pathHistory);
+  const RedoEvent(this.painter, this.pathHistory);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class ClearEvent extends PainterEvent {
   final Paint painter;
   final PathHistory pathHistory;
 
-  ClearEvent(this.painter, this.pathHistory);
+  const ClearEvent(this.painter, this.pathHistory);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class ThicknessEvent extends PainterEvent {
@@ -29,7 +41,10 @@ class ThicknessEvent extends PainterEvent {
   final PathHistory pathHistory;
   final double thickness;
 
-  ThicknessEvent(this.painter, this.pathHistory, this.thickness);
+  const ThicknessEvent(this.painter, this.pathHistory, this.thickness);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class DrawColorEvent extends PainterEvent {
@@ -37,7 +52,10 @@ class DrawColorEvent extends PainterEvent {
   final PathHistory pathHistory;
   final Color drawColor;
 
-  DrawColorEvent(this.painter, this.pathHistory, this.drawColor);
+  const DrawColorEvent(this.painter, this.pathHistory, this.drawColor);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class BackgroundEvent extends PainterEvent {
@@ -45,7 +63,10 @@ class BackgroundEvent extends PainterEvent {
   final PathHistory pathHistory;
   final Color backgroundColor;
 
-  BackgroundEvent(this.painter, this.pathHistory, this.backgroundColor);
+  const BackgroundEvent(this.painter, this.pathHistory, this.backgroundColor);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class EraseEvent extends PainterEvent {
@@ -53,7 +74,10 @@ class EraseEvent extends PainterEvent {
   final PathHistory pathHistory;
   final BlendMode isErased;
 
-  EraseEvent(this.painter, this.pathHistory, this.isErased);
+  const EraseEvent(this.painter, this.pathHistory, this.isErased);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class PanStartEvent extends PainterEvent {
@@ -61,7 +85,10 @@ class PanStartEvent extends PainterEvent {
   final PathHistory pathHistory;
   final Offset position;
 
-  PanStartEvent(this.painter, this.pathHistory, this.position);
+  const PanStartEvent(this.painter, this.pathHistory, this.position);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class PanUpdateEvent extends PainterEvent {
@@ -69,14 +96,20 @@ class PanUpdateEvent extends PainterEvent {
   final PathHistory pathHistory;
   final Offset position;
 
-  PanUpdateEvent(this.painter, this.pathHistory, this.position);
+  const PanUpdateEvent(this.painter, this.pathHistory, this.position);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class PanEndEvent extends PainterEvent {
   final Paint painter;
   final PathHistory pathHistory;
 
-  PanEndEvent(this.painter, this.pathHistory);
+  const PanEndEvent(this.painter, this.pathHistory);
+
+  @override
+  List<Object?> get props => [];
 }
 
 class FinishEvent extends PainterEvent {
@@ -84,5 +117,8 @@ class FinishEvent extends PainterEvent {
   final PathHistory pathHistory;
   final ValueGetter<Size>? finishPicture;
 
-  FinishEvent(this.painter, this.pathHistory, this.finishPicture);
+  const FinishEvent(this.painter, this.pathHistory, this.finishPicture);
+
+  @override
+  List<Object?> get props => [];
 }

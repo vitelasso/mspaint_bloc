@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:mspaint_bloc/utils/path_history.dart';
 import 'package:mspaint_bloc/utils/picture_details.dart';
 
-class PainterState {
+class PainterState extends Equatable {
   final Paint painter;
   final PathHistory pathHistory;
   final PictureDetails? cached;
@@ -30,4 +31,7 @@ class PainterState {
       cached: null,
     );
   }
+
+  @override
+  List<Object?> get props => [painter, pathHistory, cached];
 }

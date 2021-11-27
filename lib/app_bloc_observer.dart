@@ -8,6 +8,7 @@ class AppBlocObserver extends BlocObserver {
     super.onChange(bloc, change);
     if (bloc is Cubit) {
       if (kDebugMode) {
+        // ignore: avoid_print
         print(change);
       }
     }
@@ -17,6 +18,7 @@ class AppBlocObserver extends BlocObserver {
   void onTransition(Bloc bloc, Transition transition) {
     super.onTransition(bloc, transition);
     if (kDebugMode) {
+      // ignore: avoid_print
       print(transition);
     }
   }

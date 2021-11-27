@@ -34,8 +34,8 @@ class MenuBar extends StatelessWidget {
                     builder: (BuildContext context, StateSetter setState) {
                   return IconButton(
                       icon: state.painter.blendMode == BlendMode.clear
-                          ? const Icon(Icons.create)
-                          : const Icon(Icons.clear),
+                          ? const Icon(Icons.clear)
+                          : const Icon(Icons.create),
                       color: Colors.white,
                       tooltip: (state.painter.blendMode == BlendMode.clear
                               ? 'Disable'

@@ -14,4 +14,14 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-# mspaint_bloc
+
+## Flutter version
+
+[✓] Flutter (Channel stable, 2.5.3, on macOS 11.2.3 20D91 darwin-x64, locale pt-PT)
+
+
+## Libraries
+     - flutter_colorpicker  //choose a color in a variety of styles
+     - flutter_bloc         //state management solution of the app
+     - bloc                //state management pattern of the app
+     - auto_route          //routing tool 
