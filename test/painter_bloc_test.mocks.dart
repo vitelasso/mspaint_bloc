@@ -123,6 +123,7 @@ class MockPaint extends _i1.Mock implements _i2.Paint {
       super.noSuchMethod(Invocation.setter(#invertColors, value),
           returnValueForMissingStub: null);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
 
@@ -183,5 +184,6 @@ class MockPathHistory extends _i1.Mock implements _i3.PathHistory {
       super.noSuchMethod(Invocation.method(#draw, [canvas, size]),
           returnValueForMissingStub: null);
   @override
+  // ignore: unnecessary_overrides
   String toString() => super.toString();
 }
